@@ -2,7 +2,10 @@
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport: fit the 1500px desktop layout to the device. Mobile users
+         see the full design scaled down and pinch-zoom to read. We chose
+         design fidelity over responsive reflow until a proper rebuild. -->
+    <meta name="viewport" content="width=1500, user-scalable=yes, initial-scale=0.26">
     <title>Vicky Kingrani · Lead UX Designer</title>
 
     <!-- SEO -->
@@ -1626,124 +1629,11 @@
             .metrics-row { flex-direction: column; gap: 20px; }
         }
 
-        /* ============================================================ */
-        /* RESPONSIVE BANDAID — phone-width screens                      */
-        /* Collapses multi-column layouts, removes desktop fixed widths, */
-        /* preserves content while making it usable on mobile.           */
-        /* ============================================================ */
-        @media (max-width: 768px) {
-            html, body { overflow-x: hidden; max-width: 100vw; }
-            body { padding: 0; background: var(--bg-page); }
-
-            /* Slides — full-bleed, no shadow, small padding */
-            .slide {
-                width: 100% !important;
-                max-width: 100% !important;
-                padding: 32px 20px !important;
-                min-height: auto !important;
-                height: auto !important;
-                border-radius: 0 !important;
-                box-shadow: none !important;
-                margin: 0 0 12px 0 !important;
-                overflow-x: hidden !important;
-            }
-            .slide-cover, .slide-intro, .slide-thanks {
-                min-height: auto !important;
-            }
-            .slide-number {
-                top: 12px !important;
-                right: 16px !important;
-                font-size: 0.65rem !important;
-            }
-
-            /* Typography down-shift */
-            body { font-size: 15px !important; line-height: 1.55 !important; }
-            .slide-cover .name { font-size: 2.4rem !important; line-height: 1.08 !important; }
-            .slide-cover .role { font-size: 0.7rem !important; letter-spacing: 0.18em !important; }
-            .slide-cover .tagline { font-size: 1.05rem !important; line-height: 1.35 !important; }
-            h1 { font-size: 1.9rem !important; line-height: 1.15 !important; }
-            h2 { font-size: 1.4rem !important; line-height: 1.2 !important; }
-            h3 { font-size: 1.1rem !important; }
-            p { font-size: 0.95rem !important; }
-
-            /* Generic single-column collapse — every grid/column layout stacks */
-            .content-wrapper,
-            .grid-2, .grid-2-uneven, .grid-2-uneven-rev, .grid-3, .grid-4,
-            [class$="-grid"], [class*="-grid "],
-            [class$="-columns"], [class*="-columns "],
-            [class$="-rows"],
-            .approach-grid, .skill-columns, .heuristic-grid,
-            .heuristic-principles-grid, .ia-roles-grid, .key-signals-grid,
-            .modules-grid, .qual-grid, .challenges-grid, .bar-chart-grid {
-                display: flex !important;
-                flex-direction: column !important;
-                grid-template-columns: 1fr !important;
-                gap: 16px !important;
-            }
-
-            /* Specific row layouts */
-            .metrics-row { flex-direction: column !important; gap: 16px !important; }
-            .tag-row, .career-arc, .career-roles, .career-credential {
-                flex-wrap: wrap !important;
-                gap: 8px !important;
-            }
-            .timeline li { grid-template-columns: 1fr !important; gap: 4px !important; }
-            .toc { column-count: 1 !important; }
-            .workflow-diagram, .workflow-compare, .state-diagram {
-                flex-direction: column !important;
-                padding: 16px !important;
-                gap: 16px !important;
-            }
-            .workflow-arrow, .perm-tier-arrow { display: none !important; }
-            .ia-card-row, .sus-dim-row { flex-direction: column !important; }
-            .ia-role-column { width: 100% !important; }
-
-            /* Cards lose min-height to avoid huge empty space */
-            .heuristic-card, .approach-card, .domain-card,
-            .ia-card, .challenge-card, .heuristic-principle-card { min-height: auto !important; }
-
-            /* Images, SVG, charts — fluid */
-            img, svg { max-width: 100% !important; height: auto !important; }
-            .bar-chart-svg { width: 100% !important; }
-
-            /* Tables: allow horizontal scroll instead of breaking page */
-            table {
-                display: block;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                max-width: 100%;
-            }
-
-            /* Tap targets — TOC entries get 44px+ tap area for thumbs */
-            a.toc-link {
-                display: block !important;
-                padding: 14px 0 !important;
-                min-height: 44px !important;
-            }
-
-            /* Cover slide contact list: stack instead of inline */
-            .slide-cover .contact { flex-direction: column !important; gap: 14px !important; align-items: flex-start !important; }
-            .slide-cover .contact span { white-space: normal !important; }
-
-            /* Big stat figures — keep proportional but smaller */
-            .fig-stat-num { font-size: 2.2rem !important; }
-            .case-marker-num { font-size: 1.8rem !important; }
-
-            /* SUS donuts & dimension grids */
-            .donut-stat svg { width: 100% !important; max-width: 200px !important; }
-            .sus-dim-rows { gap: 10px !important; }
-        }
-
-        /* Smaller phones — tighten further */
-        @media (max-width: 480px) {
-            .slide { padding: 24px 16px !important; }
-            .slide-cover .name { font-size: 2rem !important; }
-            h1 { font-size: 1.6rem !important; }
-            h2 { font-size: 1.25rem !important; }
-            body { font-size: 14px !important; }
-            .case-marker-num { font-size: 1.5rem !important; }
-            .fig-stat-num { font-size: 1.9rem !important; }
-        }
+        /* Mobile responsive bandaid removed.
+           Strategy: serve the full desktop layout to all viewports and let
+           the viewport meta auto-fit it. Mobile users see the full design
+           scaled down and pinch-zoom to read. A proper mobile-first rebuild
+           is the long-term fix. */
 
         /* Case opener marker — applied to the intro slide of each case */
         .case-marker {
