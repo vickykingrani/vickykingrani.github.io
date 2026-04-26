@@ -1,0 +1,29 @@
+# Local dev
+.DS_Store
+Thumbs.db
+*.swp
+*.log
+
+# Backups (don't ship to public repo)
+*.bak
+*.tmp
+*.trunc*
+*_backup*
+backups/
+_backups/
+
+# Source files (kept private locally)
+_resume_source.html
+_resume_export.py
+resume_source/
+docs/
+reference/
+archive/
+archived_cases/
+
+# PDFs (these are deliverables, generate on demand)
+*.pdf
+
+# OS
+.idea/
+.vscode/
