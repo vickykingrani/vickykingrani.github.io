@@ -2887,411 +2887,28 @@
 
             <nav aria-label="Case studies index">
             <ol class="toc">
-                <li><a class="toc-link" href="#case-1"><span class="toc-title">Risk Analytics Platform</span><span class="toc-sector">Investment Banking</span></a></li>
-                <li><a class="toc-link" href="#case-2"><span class="toc-title">Order Fulfilment Modernisation</span><span class="toc-sector">Enterprise Service Provider</span></a></li>
-                <li><a class="toc-link" href="#case-3"><span class="toc-title">Banking CRM</span><span class="toc-sector">Investment Banking</span></a></li>
-                <li><a class="toc-link" href="#case-4"><span class="toc-title">Clinical Inventory Module</span><span class="toc-sector">Healthcare IT</span></a></li>
-                <li><a class="toc-link" href="#case-5"><span class="toc-title">Cloud-Native Quote Platform</span><span class="toc-sector">Cloud Communications</span></a></li>
-                <li><a class="toc-link" href="#case-6"><span class="toc-title">Track &amp; Trace Domain</span><span class="toc-sector">Pharmaceutical Supply Chain</span></a></li>
-                <li><a class="toc-link" href="#case-7"><span class="toc-title">9ine Platform &middot; founding designer</span><span class="toc-sector">Cybersecurity &amp; data protection &middot; EdTech SaaS</span></a></li>
+                <li><a class="toc-link" href="#case-1"><span class="toc-title">Order Fulfilment Modernisation</span><span class="toc-sector">Enterprise Service Provider</span></a></li>
+                <li><a class="toc-link" href="#case-2"><span class="toc-title">Banking CRM</span><span class="toc-sector">Investment Banking</span></a></li>
+                <li><a class="toc-link" href="#case-3"><span class="toc-title">Clinical Inventory Module</span><span class="toc-sector">Healthcare IT</span></a></li>
+                <li><a class="toc-link" href="#case-4"><span class="toc-title">Cloud-Native Quote Platform</span><span class="toc-sector">Cloud Communications</span></a></li>
+                <li><a class="toc-link" href="#case-5"><span class="toc-title">Track &amp; Trace Domain</span><span class="toc-sector">Pharmaceutical Supply Chain</span></a></li>
+                <li><a class="toc-link" href="#case-6"><span class="toc-title">9ine Platform &middot; founding designer</span><span class="toc-sector">Cybersecurity &amp; data protection &middot; EdTech SaaS</span></a></li>
 </ol>
             </nav>
         </div>
     </div>
 
     <!-- ============================================ -->
-    <!-- CASE 1 — RISK ANALYTICS -->
+    <!-- CASE 2 — Order Fulfilment -->
     <!-- ============================================ -->
     <div class="slide slide-opener" id="case-1">
-        <span class="slide-number">04 · 01 / 07</span>
+        <span class="slide-number">04 · 01 / 06</span>
         <div class="content-wrapper">
             <div class="case-marker">
                 <span class="case-marker-num">01</span>
-                <span class="case-marker-suffix">of 07</span>
+                <span class="case-marker-suffix">of 06</span>
             </div>
-            <span class="eyebrow">Case 01 · Investment Banking · Risk Analytics</span>
-            <h2>Modernising a 10-year-old risk analytics platform</h2>
-
-            <p class="lead">A Swiss investment bank had a legacy desktop application that senior risk analysts were supposed to use daily for FRTB, VaR, and IMA DRC ETL calculations. Many were defaulting to Excel for parts of the workflow. The brief was to understand why and redesign the platform around how analysts actually work.</p>
-
-            <p>What follows is the analysis surface — one slice of a much larger market-risk platform. As the sole designer for market risk, I lead design across four interlocking products: the analysis tool shown here, plus reporting, methodology, and compliance surfaces.</p>
-
-            <div class="project-meta">
-                <div class="project-meta-item"><span>Client</span><strong>Swiss Investment Bank</strong></div>
-                <div class="project-meta-item"><span>Domain</span><strong>Market Risk</strong></div>
-                <div class="project-meta-item"><span>Timeline</span><strong>Mar 2023 — present</strong></div>
-                <div class="project-meta-item"><span>My Role</span><strong>Lead UX Designer (Wipro · permanent) · Sole designer for Market Risk</strong></div>
-                <div class="project-meta-item"><span>Scope</span><strong>4 interlocking products · analyst, methodology &amp; compliance teams</strong></div>
-                <div class="project-meta-item"><span>Compliance</span><strong>FRTB, IMA DRC ETL, Basel III</strong></div>
-                <div class="project-meta-item"><span>Tools</span><strong>Figma, Axure, Agentic tools</strong></div>
-            </div>
-
-            <div class="img-container" style="margin-top: 12px; max-width: 75%; margin-left: auto; margin-right: auto;">
-                <img src="case_assets/01_risk_analytics/case01_legacy_landing.png" alt="Legacy desktop risk analytics platform showing an empty analysis state with dense Windows-style toolbar, COB Date list, empty Hierarchy Nodes panel, and Risk Classes checkboxes">
-                <div class="caption">The legacy desktop tool — built for quants in 2014, expanded by accretion ever since. The brief: understand why analysts had stopped using it for parts of the workflow.</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">05 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Quantitative discovery</span>
-            <h2>Surveying the damage</h2>
-
-            <p class="lead">To validate assumptions before observation, I deployed a system-wide usability survey across the user base, ran 11 structured one-on-one interviews with senior analysts (n=11), and mapped the findings to Nielsen's heuristics to diagnose root causes. The quantitative data painted a stark picture of a platform failing its core users on both usability and reliability.</p>
-
-            <div class="metrics-row" style="margin-top: 28px;">
-                <div>
-                    <div class="number">2.4<span style="font-size: 1.6rem; color: var(--text-muted);">/5</span></div>
-                    <div class="label">Ease of use</div>
-                </div>
-                <div>
-                    <div class="number">2.7<span style="font-size: 1.6rem; color: var(--text-muted);">/5</span></div>
-                    <div class="label">System reliability</div>
-                </div>
-                <div>
-                    <div class="number">2.5<span style="font-size: 1.6rem; color: var(--text-muted);">/5</span></div>
-                    <div class="label">Overall experience</div>
-                </div>
-            </div>
-
-            <h3 class="section-heading loose">Top survey complaints, in the analysts' own words</h3>
-            <div class="grid-3" style="margin-top: 16px;">
-                <div class="finding">
-                    <strong>System overload</strong>
-                    <p style="font-style: italic; margin-top: 8px;">"Doesn't work in the afternoon… some runs take a minute, the same run later just crashes."</p>
-                </div>
-                <div class="finding">
-                    <strong>Information overload</strong>
-                    <p style="font-style: italic; margin-top: 8px;">"There are too many buttons and options for a new user. There is a lot of hidden functionality."</p>
-                </div>
-                <div class="finding">
-                    <strong>Reliability cost</strong>
-                    <p style="font-style: italic; margin-top: 8px;">"It takes time to run the tool. After waiting for an hour, if it only gives me error messages, I feel like I am losing my work."</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">06 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Qualitative observation</span>
-            <h2>Three patterns from contextual research with senior analysts</h2>
-
-            <p class="lead">Three weeks observing analysts during their end-of-day risk runs, supplemented by the 11 structured interviews. Three patterns surfaced consistently — each pinpointing where the survey complaints actually came from.</p>
-
-            <div class="grid-3" style="margin-top: 24px;">
-                <div class="finding">
-                    <strong>The hierarchy node picker was a modal that obscured the analysis page.</strong>
-                    <p>Selecting a portfolio meant losing visibility of what was already configured. Analysts opened and closed the modal repeatedly to verify their selections before running a single compute.</p>
-                </div>
-                <div class="finding">
-                    <strong>Risk metric selection was a flat list of hundreds of metric variants with no grouping or defaults.</strong>
-                    <p>Selecting the right combination required institutional memory. New joiners could not operate the tool independently without a senior analyst alongside them.</p>
-                </div>
-                <div class="finding">
-                    <strong>Bookmarks lived in a separate dialog, disconnected from the analysis flow.</strong>
-                    <p>As a result, the bookmarking feature was largely unused. Analysts re-entered their parameters daily.</p>
-                </div>
-            </div>
-
-            <div class="callout">
-                <p>Every analyst, without exception, was exporting to Excel for the analysis the platform should have been supporting. The tool wasn't extending the workflow — it was the bottleneck the workflow had to route around.</p>
-            </div>
-
-            <div class="grid-3" style="margin-top: 28px;">
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_legacy_portfolio.png" alt="Legacy portfolio and hierarchy node selection dialog overlaying the main analysis page, with a tree of business groups expanded under the parent group showing subsidiary divisions including Treasury, Wealth Management, Regional Management, and Investment Banking">
-                    <div class="caption">Hierarchy picker — a modal on top of the analysis page, hiding context.</div>
-                </div>
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_legacy_metrics.png" alt="Legacy Risk Metrics modal showing multiple tabs of risk-metric categories with a long flat list of metric names and arrow buttons to add selections to a Selected Risk Metrics column">
-                    <div class="caption">Risk Metric picker — hundreds of metric variants in a flat list, no defaults.</div>
-                </div>
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_legacy_bookmarks.png" alt="Legacy Organise bookmarks modal with New Bookmark fields, Schedule options, and a list of saved User Bookmarks separate from the main analysis flow">
-                    <div class="caption">Bookmarks — a separate dialog disconnected from the analysis.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">07 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Synthesis</span>
-            <h2>Mapping the noise to root causes</h2>
-
-            <p class="lead">With survey, interviews, and contextual observations gathered, I synthesised against Nielsen's heuristics — separating symptoms (slowness, confusion, lost bookmarks) from root causes. Five violations surfaced on the legacy interface; three behavioural patterns appeared in every analyst we observed.</p>
-
-            <div class="img-container" style="position: relative; max-width: 55%; margin: 28px auto 0;">
-                <img src="case_assets/01_risk_analytics/case01_legacy_bookmarks.png" alt="Legacy risk analytics interface with the bookmark-creation dialog open, annotated with five numbered orange callout pins marking the locations of Nielsen-heuristic violations: 1 progress feedback missing on the Compute action, 2 error and result feedback surfacing inside the bookmark dialog, 3 toolbar density across the top action bar, 4 the bookmark dialog itself as the surfaced user-control failure, 5 inconsistent naming across the panels">
-                <span class="callout-pin" style="top: 4%; left: 5.5%;">1</span>
-                <span class="callout-pin" style="top: 32%; left: 50%;">2</span>
-                <span class="callout-pin" style="top: 5%; left: 30%;">3</span>
-                <span class="callout-pin" style="top: 13%; left: 50%;">4</span>
-                <span class="callout-pin" style="top: 60%; left: 18%;">5</span>
-                <div class="caption">Five heuristic violations mapped onto the legacy bookmark workflow — the dialog overlaying the analysis surface is itself the user-control failure (4).</div>
-            </div>
-
-            <h3 class="section-heading">Heuristic evaluation — five violations, ranked by severity</h3>
-            <div class="heuristic-grid">
-                <div class="heuristic-card severity-critical">
-                    <span class="heuristic-severity">Critical</span>
-                    <div class="heuristic-name"><span class="heuristic-num">1</span>Visibility of system status</div>
-                    <p class="heuristic-evidence">"Progress bar would jump and wasn't trusted… give more indication of progress."</p>
-                </div>
-                <div class="heuristic-card severity-critical">
-                    <span class="heuristic-severity">Critical</span>
-                    <div class="heuristic-name"><span class="heuristic-num">2</span>Help users recover from errors</div>
-                    <p class="heuristic-evidence">"Error messages were meaningless to everyone."</p>
-                </div>
-                <div class="heuristic-card severity-major">
-                    <span class="heuristic-severity">Major</span>
-                    <div class="heuristic-name"><span class="heuristic-num">3</span>Aesthetic and minimalist design</div>
-                    <p class="heuristic-evidence">"Interface is overloaded. Too many buttons and options for a new user."</p>
-                </div>
-                <div class="heuristic-card severity-minor">
-                    <span class="heuristic-severity">Minor</span>
-                    <div class="heuristic-name"><span class="heuristic-num">4</span>User control and freedom</div>
-                    <p class="heuristic-evidence">"Bookmarks are difficult to use… very easy to overwrite a current bookmark by error."</p>
-                </div>
-                <div class="heuristic-card severity-minor">
-                    <span class="heuristic-severity">Minor</span>
-                    <div class="heuristic-name"><span class="heuristic-num">5</span>Consistency and standards</div>
-                    <p class="heuristic-evidence">"Inconsistency between names of aggregation keys and adjacent risk systems."</p>
-                </div>
-            </div>
-
-            <h3 class="section-heading">Patterns universal across every user we spoke with</h3>
-            <div class="grid-3" style="margin-top: 16px; gap: 24px;">
-                <div class="pattern-band-item">
-                    <strong>Excel as the analysis layer</strong>
-                    <p>Every analyst exported to Excel for filtering, pivoting, and comparison. The tool gathered the data; Excel did the work.</p>
-                </div>
-                <div class="pattern-band-item">
-                    <strong>Multiple windows for parallel work</strong>
-                    <p>To run two queries side-by-side, analysts opened the entire app multiple times. The interface assumed serial work; the actual job was parallel.</p>
-                </div>
-                <div class="pattern-band-item">
-                    <strong>One-on-one onboarding from colleagues</strong>
-                    <p>New joiners learned the tool from seniors; documentation was years out of date and the app offered no in-product guidance.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">08 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Personas, alignment &amp; strategy</span>
-            <h2>From research insight to design strategy</h2>
-
-            <p class="lead">Three things needed to land before the redesign could begin: who the system was actually serving, which competing stakeholders had to be aligned, and what design principles would guide every decision that followed.</p>
-
-            <h3 class="section-heading">Two users, one static screen</h3>
-            <p>The contextual research surfaced a fundamental clash. The legacy interface was forcing two entirely different personas onto the exact same static form.</p>
-
-            <div class="grid-2" style="margin-top: 16px;">
-                <div class="finding">
-                    <strong>The Daily Analyst</strong>
-                    <p>Needed five inputs to run a standard overnight VaR report. Configuration was largely the same most days; the rest of the form was noise.</p>
-                </div>
-                <div class="finding">
-                    <strong>The Methodology Expert</strong>
-                    <p>Needed 50+ inputs to run deep, exploratory "What-If" stress scenarios. Required unfiltered access to the full parameter space.</p>
-                </div>
-            </div>
-
-            <div class="pull-quote">
-                <blockquote>It's a generic solution with everything in one application. If you split it into 4+ different applications — analytics, reporting, etc. — that delivered exactly what the user wanted.</blockquote>
-                <span class="pull-quote-attr">Senior risk analyst — survey response</span>
-                <p class="pull-quote-bridge">The respondent had articulated the architecture before I designed it. The strategy followed from there: don't delete complex features, make the system respond to user context — and split it where the work actually splits.</p>
-            </div>
-
-            <h3 class="section-heading">Three principles for what came next</h3>
-            <div class="grid-3" style="margin-top: 16px;">
-                <div class="finding">
-                    <strong>Contextual loading</strong>
-                    <p>Static forms become responsive. The UI updates fields, components, and portfolios based on the metric selected — masking different backend calculators.</p>
-                </div>
-                <div class="finding">
-                    <strong>Progressive disclosure</strong>
-                    <p>Hide advanced parameters by default. Smart chips and accordions reveal only what is relevant to the analyst's current task.</p>
-                </div>
-                <div class="finding">
-                    <strong>In-app collaboration</strong>
-                    <p>Eliminate offline file sharing. Analysts save, manage, and share query bookmarks securely within the platform itself.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">09 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Progressive disclosure</span>
-            <h2>Redesigning around uninterrupted flow</h2>
-
-            <p class="lead">The redesign replaced modal handoffs with full-screen pickers and persistent chips. The picker is no longer in the way of the analysis — selections sit on the main view, removable in one click.</p>
-
-            <div class="img-container" style="margin-top: 24px;">
-                <img src="case_assets/01_risk_analytics/case01_redesign_empty.png" alt="New Risk Analytics Platform empty state showing clean layout with Main, VaR, and DRC IMA What If tabs, and fields for Risk Metric, COB Date, and Portfolio">
-                <div class="caption">The redesigned analysis page — clean tabs (Main, VaR, DRC IMA What If), three required fields surfaced (Risk Metric, COB Date, Portfolio).</div>
-            </div>
-
-            <div class="grid-2" style="margin-top: 24px;">
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_metric_picker.png" alt="New Risk Metric selection modal showing tabs FRTB DRC IMA, ETL, VaR, Stress, SVaR with a search field, list of metrics with confidence level and holding period columns, and a Selected Risk Metrics panel on the right with VAR 1 Day 99% quantile SVaR and others added">
-                    <div class="caption">Risk Metric picker — tabs replace the flat list; search and multi-select replace the arrow buttons.</div>
-                </div>
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_portfolio_picker.png" alt="New Portfolio Definition modal showing Bookstore Hierarchy and Legal Entity Hierarchy side by side, each with filter inputs, sortable Node, Level, and ID columns, and a tree of the parent group expandable to its subsidiaries">
-                    <div class="caption">Portfolio Definition — Bookstore and Legal Entity hierarchies side by side, filters at column level.</div>
-                </div>
-            </div>
-
-            <div class="grid-2" style="margin-top: 16px;">
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_chips_intermediate.png" alt="New Risk Analytics Platform analysis page showing FRTB Risk Metric chips populated and COB Date 2024-12-31 selected, with Portfolio field now enabled and ready to receive a selection — Query Name set to Ad Hoc Request">
-                    <div class="caption">Once metric and date are set, Portfolio selection becomes available — the form guides the analyst through prerequisites without modal handoffs.</div>
-                </div>
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_chips_full.png" alt="New Risk Analytics Platform analysis page showing Risk Metric chips for FRTB_DRC_IMA IMA DRC ETL 99.9% and IMA DRC ETL 98%, and Portfolio chips representing the parent group and its selected subsidiaries, with COB Date 2024-12-31 and Currency USD">
-                    <div class="caption">Full configuration — chips visible at all times, removable in one click.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">10 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Adaptive behaviour &amp; personalisation</span>
-            <h2>An interface that adapts to scenario and to user</h2>
-
-            <p class="lead">Risk analytics workflows vary enormously by scenario. FRTB calculations, VaR scenarios, and stress testing each need different inputs, and on the backend they run through different calculators. The frontend's job was to handle that without forcing the analyst to think about it.</p>
-
-            <div class="grid-2" style="margin-top: 24px; gap: 28px;">
-                <div class="finding">
-                    <strong>Smart defaults on the empty state</strong>
-                    <p>The Analysis page now opens with VaR Type, Risk Class, Currency, and Reporting prepopulated to the analyst's last-used values. Returning users configure only what has changed; new joiners get a sensible starting point.</p>
-                </div>
-                <div class="finding">
-                    <strong>Adaptive Portfolio Definition</strong>
-                    <p>When VaR, SVaR, or stress metrics are selected, a different Portfolio Definition component is enabled — reflecting the calculator running on the backend. The user-facing surface stays consistent; the underlying logic switches transparently.</p>
-                </div>
-                <div class="finding">
-                    <strong>Inline bookmarks</strong>
-                    <p>Save Bookmark sits adjacent to Compute. Bookmarks open in the same surface, not in a separate dialog — supporting the configure-once, run-daily workflow analysts had been recreating in Excel.</p>
-                </div>
-                <div class="finding">
-                    <strong>Configurable field visibility</strong>
-                    <p>A per-tab settings panel lets analysts hide controls they don't use — keeping advanced fields available for power users without cluttering the default view for occasional ones.</p>
-                </div>
-            </div>
-
-            <div class="grid-3" style="margin-top: 32px; gap: 24px;">
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_var_adaptive.png" alt="New Risk Analytics Platform analysis page in VaR scenario showing VaR-specific Risk Metric chips (1 Day 99% quantile SVaR, 10 Day 99% Quantile SVaR, 1 Day 95% VaR), Reporting set to Mgmt, VaR Type Total, Risk Class Total, Currency USD, with Advanced Fields expanded to show Aggregation Keys, Advanced Filter, PnL Drilldown, FX Conversion, and Compute Contributions">
-                    <div class="caption">VaR scenario — adaptive components, Advanced Fields surfaced for power-user controls.</div>
-                </div>
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_bookmark.png" alt="Save Bookmark modal with Bookmark Name field set to Ad Hoc Request, character counter showing 90 characters left, and a list of previously saved bookmarks with timestamps">
-                    <div class="caption">Save Bookmark — inline, with the existing bookmark list visible alongside.</div>
-                </div>
-                <div class="img-container">
-                    <img src="case_assets/01_risk_analytics/case01_redesign_settings.png" alt="Settings modal showing a Response Decimal field and a Fields visible on tab section, with toggleable checkboxes for Advanced Fields, Aggregation Keys, Advanced Filter, PnL Drilldown, FX Conversion, and Compute Contributions, letting analysts hide controls they do not use">
-                    <div class="caption">Settings — per-tab field visibility toggles.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <span class="slide-number">11 · 01 / 07</span>
-        <div class="content-wrapper">
-            <span class="eyebrow">Case 01 (continued) · Validation &amp; outcome</span>
-            <h2>Efficiency restored</h2>
-
-            <div class="outcome-lockup">
-                <span class="outcome-eyebrow">Outcome — Risk Analytics Platform</span>
-            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 12px;">
-                <div class="donut-stat">
-                    <svg viewBox="0 0 100 100" width="120" height="120" role="img" aria-label="60 percent reduction in clicks">
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--rule)" stroke-width="10"/>
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--accent)" stroke-width="10" stroke-dasharray="151 251" transform="rotate(-90 50 50)" stroke-linecap="round"/>
-                        <text x="50" y="56" text-anchor="middle" font-size="20" font-weight="600" font-family="Inter, sans-serif" fill="var(--text-main)" aria-hidden="true">60%</text>
-                    </svg>
-                    <div class="stat-label">Reduction in clicks</div>
-                    <div class="stat-sublabel">Standard daily setups · n=5 senior analysts</div>
-                </div>
-                <div class="donut-stat">
-                    <svg viewBox="0 0 100 100" width="120" height="120" role="img" aria-label="40 percent task completion lift">
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--rule)" stroke-width="10"/>
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--accent)" stroke-width="10" stroke-dasharray="100 251" transform="rotate(-90 50 50)" stroke-linecap="round"/>
-                        <text x="50" y="56" text-anchor="middle" font-size="20" font-weight="600" font-family="Inter, sans-serif" fill="var(--text-main)" aria-hidden="true">40%</text>
-                    </svg>
-                    <div class="stat-label">Task completion lift</div>
-                    <div class="stat-sublabel">Figma prototype testing · n=5 senior analysts</div>
-                </div>
-                <div class="donut-stat">
-                    <svg viewBox="0 0 100 100" width="120" height="120" role="img" aria-label="30 percent faster frontend development">
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--rule)" stroke-width="10"/>
-                        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--accent)" stroke-width="10" stroke-dasharray="75 251" transform="rotate(-90 50 50)" stroke-linecap="round"/>
-                        <text x="50" y="56" text-anchor="middle" font-size="20" font-weight="600" font-family="Inter, sans-serif" fill="var(--text-main)" aria-hidden="true">30%</text>
-                    </svg>
-                    <div class="stat-label">Engineering throughput</div>
-                    <div class="stat-sublabel">Reported by the engineering team after design-system rollout</div>
-                </div>
-                <div class="donut-stat">
-                    <div class="badge-stat">
-                        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M5 13l4 4L19 7"/>
-                        </svg>
-                    </div>
-                    <div class="stat-label">WCAG AA</div>
-                    <div class="stat-sublabel">Native compliance across data tables and inputs</div>
-                </div>
-                <div class="donut-stat">
-                    <div class="badge-stat" aria-label="Ongoing impact: design system propagated to three adjacent market-risk products">
-                        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M5 12h14M13 5l7 7-7 7"/>
-                        </svg>
-                    </div>
-                    <div class="stat-label">Ongoing impact</div>
-                    <div class="stat-sublabel">Design system propagated to 3 adjacent market-risk products</div>
-                </div>
-            </div>
-            </div>
-
-            <p class="lead" style="margin-top: 36px;">The static form became responsive to scenario. Offline bookmark-sharing moved in-product. A standardised component library carried both the redesign and the adjacent products that followed. Senior analysts came back to the platform, and the compliance gap that Excel had been opening started to close.</p>
-
-            <p>Before development, the redesigned flow was prototyped in Figma and validated with five senior analysts. Drill-down setup completion lifted 40% in those sessions, and components were handed to engineering with documented states and interaction specs to keep QA cycles short.</p>
-
-            <div class="callout" style="margin-top: 24px;">
-                <p>The platform is in active use and the engagement has since expanded into the three adjacent market-risk products. The bank's global design system was applied here first; it is now the consistency layer that lets one designer maintain the visual and interaction grammar across the full domain.</p>
-            </div>
-            <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 01</span>
-                <span class="case-end-marker-num">01 / 07</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ============================================ -->
-    <!-- CASE 2 — Order Fulfilment -->
-    <!-- ============================================ -->
-    <div class="slide slide-opener" id="case-2">
-        <span class="slide-number">12 · 02 / 07</span>
-        <div class="content-wrapper">
-            <div class="case-marker">
-                <span class="case-marker-num">02</span>
-                <span class="case-marker-suffix">of 07</span>
-            </div>
-            <span class="eyebrow">Case 02 · Enterprise Service Provider · Order Fulfillment Modernisation</span>
+            <span class="eyebrow">Case 01 · Enterprise Service Provider · Order Fulfillment Modernisation</span>
             <h2>Replacing a legacy CRM-based ticketing system handling 467,000 tickets a year</h2>
 
             <p class="lead">A major global telecommunications operator's Global Operations Centres in Mumbai, Manila, and Denver were managing service delivery tickets through a legacy desktop CRM platform. The platform processed 467,654 trouble, change, and maintenance tickets annually. Engineers had no orchestration tools, no way to prioritise across the queue, and the interface required extensive training before new joiners could operate independently.</p>
@@ -3312,9 +2929,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">13 · 02 / 07</span>
+        <span class="slide-number">05 · 01 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 02 (continued) · Research &amp; insights</span>
+            <span class="eyebrow">Case 01 (continued) · Research &amp; insights</span>
             <h2>Contextual research across Mumbai, Manila, and Denver</h2>
 
             <p class="lead">My most extensive research engagement. Across the three operations centres in Mumbai, Manila, and Denver we ran 100+ interviews and structured shift-observation sessions remotely from Pune — capturing how engineers triaged tickets in real operating conditions rather than in scheduled interview slots.</p>
@@ -3413,9 +3030,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">14 · 02 / 07</span>
+        <span class="slide-number">06 · 01 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 02 (continued) · Volume &amp; service flow</span>
+            <span class="eyebrow">Case 01 (continued) · Volume &amp; service flow</span>
             <h2>467,000 tickets — and the process map that handed them off</h2>
 
             <p class="lead">Two further research outputs anchored the redesign: the volume picture (which categories actually ran the system) and the service-delivery map (where context was lost between teams).</p>
@@ -3623,9 +3240,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">15 · 02 / 07</span>
+        <span class="slide-number">07 · 01 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 02 (continued) · Wireframes</span>
+            <span class="eyebrow">Case 01 (continued) · Wireframes</span>
             <h2>From rough sketches to Axure prototypes</h2>
 
             <p class="lead">The redesign moved from low-fidelity sketches to higher-fidelity Axure prototypes — testing structure and information hierarchy before any visual design.</p>
@@ -3669,9 +3286,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">16 · 02 / 07</span>
+        <span class="slide-number">08 · 01 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 02 (continued) · The redesign &amp; outcome</span>
+            <span class="eyebrow">Case 01 (continued) · The redesign &amp; outcome</span>
             <h2>Orchestration through visual hierarchy and contextual data</h2>
 
             <p class="lead">Three interlocking surfaces — a centralised queue with priority intelligence, a contextual detail view with full ticket history, and a Shift Help dashboard for real-time orchestration. Together they replaced the scattering across portals that the legacy system forced.</p>
@@ -3701,9 +3318,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">17 · 02 / 07</span>
+        <span class="slide-number">09 · 01 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 02 (continued) · Outcome &amp; results</span>
+            <span class="eyebrow">Case 01 (continued) · Outcome &amp; results</span>
             <h2>What the redesign delivered</h2>
 
             <p class="lead">The redesign was validated with five-person usability sessions on the new prototype against the legacy platform. Standardised System Usability Scale (SUS) testing and per-task instrumentation captured the lift.</p>
@@ -3850,8 +3467,8 @@
             </div>
 
             <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 02</span>
-                <span class="case-end-marker-num">02 / 07</span>
+                <span class="case-end-marker-label">End of Case 01</span>
+                <span class="case-end-marker-num">01 / 06</span>
             </div>
         </div>
     </div>
@@ -3859,14 +3476,14 @@
     <!-- ============================================ -->
     <!-- CASE 3 — BANKING CRM -->
     <!-- ============================================ -->
-    <div class="slide slide-opener" id="case-3">
-        <span class="slide-number">18 · 03 / 07</span>
+    <div class="slide slide-opener" id="case-2">
+        <span class="slide-number">10 · 02 / 06</span>
         <div class="content-wrapper">
             <div class="case-marker">
-                <span class="case-marker-num">03</span>
-                <span class="case-marker-suffix">of 07</span>
+                <span class="case-marker-num">02</span>
+                <span class="case-marker-suffix">of 06</span>
             </div>
-            <span class="eyebrow">Case 03 · Investment Banking · CRM Modernisation</span>
+            <span class="eyebrow">Case 02 · Investment Banking · CRM Modernisation</span>
             <h2>Rebuilding a CRM around banker workflows, not the org chart</h2>
 
             <p class="lead">A top-tier US national bank's CRM had grown into a complex three-column interface with deeply nested navigation. Bankers managed pipelines, deal tracking, customer profiles, and tasks from the same surface — but the information architecture reflected internal departments, not the work bankers actually did.</p>
@@ -3911,9 +3528,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">19 · 03 / 07</span>
+        <span class="slide-number">11 · 02 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 03 (continued) · Strategy &amp; process</span>
+            <span class="eyebrow">Case 02 (continued) · Strategy &amp; process</span>
             <h2>Mapping the journey before redesigning the screens</h2>
 
             <p class="lead">The redesign needed structural change, not a screen-level refresh — and that meant we had to earn stakeholder buy-in for that scope before any visual design started.</p>
@@ -3950,9 +3567,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">20 · 03 / 07</span>
+        <span class="slide-number">12 · 02 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 03 (continued) · The redesign</span>
+            <span class="eyebrow">Case 02 (continued) · The redesign</span>
             <h2>Unified pipeline, contextual detail, analytics on the same surface</h2>
 
             <p class="lead">Three views of one surface, built from the same component library. Pipeline is the primary canvas; the side panel and analytics are different cuts of the same data, never the analyst leaving the pipeline view to access either.</p>
@@ -3976,9 +3593,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">21 · 03 / 07</span>
+        <span class="slide-number">13 · 02 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 03 (continued) · Validation &amp; outcome</span>
+            <span class="eyebrow">Case 02 (continued) · Validation &amp; outcome</span>
             <h2>Savings that came from the system, not the redesign</h2>
 
             <div class="outcome-lockup">
@@ -4055,8 +3672,8 @@
                 <p>The savings were a systems metric. The components went on extending across CRM modules well beyond the original engagement — that's how design systems became the spine of how I work.</p>
             </div>
             <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 03</span>
-                <span class="case-end-marker-num">03 / 07</span>
+                <span class="case-end-marker-label">End of Case 02</span>
+                <span class="case-end-marker-num">02 / 06</span>
             </div>
         </div>
     </div>
@@ -4064,14 +3681,14 @@
     <!-- ============================================ -->
     <!-- CASE 4 — INVENTORY MODULE -->
     <!-- ============================================ -->
-    <div class="slide slide-opener" id="case-4">
-        <span class="slide-number">22 · 04 / 07</span>
+    <div class="slide slide-opener" id="case-3">
+        <span class="slide-number">14 · 03 / 06</span>
         <div class="content-wrapper">
             <div class="case-marker">
-                <span class="case-marker-num">04</span>
-                <span class="case-marker-suffix">of 07</span>
+                <span class="case-marker-num">03</span>
+                <span class="case-marker-suffix">of 06</span>
             </div>
-            <span class="eyebrow">Case 04 · Healthcare IT · Clinical Inventory</span>
+            <span class="eyebrow">Case 03 · Healthcare IT · Clinical Inventory</span>
             <h2>Fixing a clinical inventory system that 78% of staff had stopped using</h2>
 
             <p class="lead">A multi-hospital healthcare network had invested in a clinical inventory management system to track medical supplies across stores, pharmacies, and operating theatres. Only 22% of staff actually used it. The remaining 78% maintained shadow Excel spreadsheets because the official system was too slow and confusing for daily work.</p>
@@ -4093,9 +3710,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">23 · 04 / 07</span>
+        <span class="slide-number">15 · 03 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 04 (continued) · Research &amp; IA</span>
+            <span class="eyebrow">Case 03 (continued) · Research &amp; IA</span>
             <h2>One system, three distinct user groups</h2>
 
             <p class="lead">The critical insight was that this was not one user group but three — store managers, pharmacy managers, and OT managers — each with distinct daily priorities, risk profiles, and workflow patterns.</p>
@@ -4235,9 +3852,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">24 · 04 / 07</span>
+        <span class="slide-number">16 · 03 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 04 (continued) · Redesign &amp; outcome</span>
+            <span class="eyebrow">Case 03 (continued) · Redesign &amp; outcome</span>
             <h2>Redesigned around the views that actually matter</h2>
 
             <p class="lead">The redesigned Main Store collapses the legacy diagram into clear navigation by role, with tabs for the views warehouse staff actually need (Refrigerated, Low Stock, Vital, Expired, New Expiry) and a dense filterable table for power users.</p>
@@ -4305,8 +3922,8 @@
             </div>
 
             <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 04</span>
-                <span class="case-end-marker-num">04 / 07</span>
+                <span class="case-end-marker-label">End of Case 03</span>
+                <span class="case-end-marker-num">03 / 06</span>
             </div>
         </div>
     </div>
@@ -4314,14 +3931,14 @@
     <!-- ============================================ -->
     <!-- CASE 5 — Cloud Quote Platform -->
     <!-- ============================================ -->
-    <div class="slide slide-opener" id="case-5">
-        <span class="slide-number">25 · 05 / 07</span>
+    <div class="slide slide-opener" id="case-4">
+        <span class="slide-number">17 · 04 / 06</span>
         <div class="content-wrapper">
             <div class="case-marker">
-                <span class="case-marker-num">05</span>
-                <span class="case-marker-suffix">of 07</span>
+                <span class="case-marker-num">04</span>
+                <span class="case-marker-suffix">of 06</span>
             </div>
-            <span class="eyebrow">Case 05 · Cloud Communications · Legacy Quote Tool → Cloud-Native Platform</span>
+            <span class="eyebrow">Case 04 · Cloud Communications · Legacy Quote Tool → Cloud-Native Platform</span>
             <h2>Replacing an 8-page legacy quote form with a 3-step cloud workflow</h2>
 
             <p class="lead">The cloud communications provider's quoting tool was a single eight-page form. Sales agents scrolled through every service category — Voice Connectivity, Data, Business Continuity, Wireless — even when quoting one product. Validation was minimal, the layout pre-dated responsive design, and new agents took weeks to ramp. Time-to-quote blocked the cloud-native rebuild the business had committed to.</p>
@@ -4365,9 +3982,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">26 · 05 / 07</span>
+        <span class="slide-number">18 · 04 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 05 (continued) · Research &amp; process</span>
+            <span class="eyebrow">Case 04 (continued) · Research &amp; process</span>
             <h2>Mapping the workflows before redesigning the screens</h2>
 
             <p class="lead">The redesign needed to be grounded in how sales agents actually moved through the existing tool — what they navigated, where they stalled, what they ignored. The research and process work happened in five stages.</p>
@@ -4446,9 +4063,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">27 · 05 / 07</span>
+        <span class="slide-number">19 · 04 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 05 (continued) · Design progression</span>
+            <span class="eyebrow">Case 04 (continued) · Design progression</span>
             <h2>From paper sketch to cloud-native build</h2>
 
             <p class="lead">The 3-step structure was validated in pencil before any pixel. Pairing the wireframe against the cloud-native build is the clearest reading of how research and structural decisions translated to the delivered product.</p>
@@ -4468,9 +4085,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">28 · 05 / 07</span>
+        <span class="slide-number">20 · 04 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 05 (continued) · Validation &amp; outcome</span>
+            <span class="eyebrow">Case 04 (continued) · Validation &amp; outcome</span>
             <h2>Click-time down, SUS up &mdash; what the move to three steps delivered</h2>
 
             <p class="lead">The redesign was validated in pre/post sessions: six representative sales agents working real quote tasks against both the legacy tool and the new prototype. Standardised SUS testing and per-task instrumentation captured the lift across both quantitative and qualitative dimensions.</p>
@@ -4716,8 +4333,8 @@
                 <p>The four dimensions that moved most were learnability and consistency — symptoms of the same root cause. Agents had been holding the location of every service category in memory because the form gave them no other way to find it. Three sequenced steps removed that load, and the SUS score moved with it.</p>
             </div>
             <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 05</span>
-                <span class="case-end-marker-num">05 / 07</span>
+                <span class="case-end-marker-label">End of Case 04</span>
+                <span class="case-end-marker-num">04 / 06</span>
             </div>
         </div>
     </div>
@@ -4725,14 +4342,14 @@
     <!-- ============================================ -->
     <!-- CASE 6 — MOBILE WAREHOUSE OPERATIONS -->
     <!-- ============================================ -->
-    <div class="slide slide-opener" id="case-6">
-        <span class="slide-number">29 · 06 / 07</span>
+    <div class="slide slide-opener" id="case-5">
+        <span class="slide-number">21 · 05 / 06</span>
         <div class="content-wrapper">
             <div class="case-marker">
-                <span class="case-marker-num">06</span>
-                <span class="case-marker-suffix">of 07</span>
+                <span class="case-marker-num">05</span>
+                <span class="case-marker-suffix">of 06</span>
             </div>
-            <span class="eyebrow">Case 06 · Pharmaceutical Supply Chain · Track &amp; Trace Domain</span>
+            <span class="eyebrow">Case 05 · Pharmaceutical Supply Chain · Track &amp; Trace Domain</span>
             <h2>Restructuring receiving across a four-surface serialisation domain</h2>
 
             <p class="lead">The serialisation engagement spanned four product surfaces handling millions of daily transactions globally — the desktop receiving redesign was the most visible deliverable. The work spanned two successive platform rebuilds: a low-code Gen-1 platform that replaced a legacy serialisation cloud, and a no-code Gen-2 platform that followed.</p>
@@ -4788,9 +4405,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">30 · 06 / 07</span>
+        <span class="slide-number">22 · 05 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 06 (continued) · Domain logic</span>
+            <span class="eyebrow">Case 05 (continued) · Domain logic</span>
             <h2>Process, workflow, and the state machine that aligned three teams</h2>
 
             <p class="lead">Across the four product surfaces of the engagement, my Koru team mapped workflow and state logic end to end before any screen was finalised — so engineering, QA and customer-facing copy could all reference the same artefacts.</p>
@@ -5007,9 +4624,9 @@
 
 
     <div class="slide">
-        <span class="slide-number">31 · 06 / 07</span>
+        <span class="slide-number">23 · 05 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 06 (continued) · Migration &amp; outcome</span>
+            <span class="eyebrow">Case 05 (continued) · Migration &amp; outcome</span>
             <h2>The restructured receiving — search, status, and a clear stepper</h2>
 
             <p class="lead">The redesigned receiving flow was the most visible artefact of the engagement. The dense legacy state shown on the opener was restructured into a clearer in-progress stepper with the exception flow pulled into the receipt detail itself.</p>
@@ -5033,9 +4650,9 @@
     </div>
 
     <div class="slide">
-        <span class="slide-number">32 · 06 / 07</span>
+        <span class="slide-number">24 · 05 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 06 (continued) · Reflection</span>
+            <span class="eyebrow">Case 05 (continued) · Reflection</span>
             <h2>What carried through after the rotation</h2>
 
             <p class="lead">The state machine and the workflow comparison weren't deliverables in any spec — they emerged from the early-phase design work and outlasted my involvement on the engagement. Both became reference points for engineering, QA and customer-facing teams long after the team rotated past the original scope.</p>
@@ -5067,8 +4684,8 @@
             </div>
 
             <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 06</span>
-                <span class="case-end-marker-num">06 / 07</span>
+                <span class="case-end-marker-label">End of Case 05</span>
+                <span class="case-end-marker-num">05 / 06</span>
             </div>
         </div>
     </div>
@@ -5076,14 +4693,14 @@
     <!-- ============================================ -->
     <!-- CASE 7 — 9INE PLATFORM (FOUNDING DESIGNER) -->
     <!-- ============================================ -->
-    <div class="slide slide-opener" id="case-7">
-        <span class="slide-number">33 · 07 / 07</span>
+    <div class="slide slide-opener" id="case-6">
+        <span class="slide-number">25 · 06 / 06</span>
         <div class="content-wrapper">
             <div class="case-marker">
-                <span class="case-marker-num">07</span>
-                <span class="case-marker-suffix">of 07</span>
+                <span class="case-marker-num">06</span>
+                <span class="case-marker-suffix">of 06</span>
             </div>
-            <span class="eyebrow">Case 07 &middot; Cybersecurity &amp; Data Protection &middot; EdTech SaaS</span>
+            <span class="eyebrow">Case 06 &middot; Cybersecurity &amp; Data Protection &middot; EdTech SaaS</span>
             <h2>Founding designer for a regulated EdTech platform &mdash; and the pivot from consulting to SaaS</h2>
 
             <p class="lead">9ine&apos;s consultants worked with each school 1:1, mostly out of Excel. The brief I came in on was strategic: build a platform the consultants could deploy to schools, so 9ine could grow without proportionally hiring more consultants.</p>
@@ -5106,9 +4723,9 @@
 
     <!-- ============================================ -->
     <div class="slide">
-        <span class="slide-number">34 · 07 / 07</span>
+        <span class="slide-number">26 · 06 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 07 (continued) &middot; Platform scope</span>
+            <span class="eyebrow">Case 06 (continued) &middot; Platform scope</span>
             <h2>Eight modules, one design system, four user tiers</h2>
 
             <p class="lead">The platform had to handle three concurrent design problems: real GDPR/cybersecurity workflow, a permission model that fit how 9ine actually delivered the service, and a subscription model that let each school enable only the modules they paid for. The design system carried all three.</p>
@@ -5195,9 +4812,9 @@
 
     <!-- ============================================ -->
     <div class="slide">
-        <span class="slide-number">35 · 07 / 07</span>
+        <span class="slide-number">27 · 06 / 06</span>
         <div class="content-wrapper">
-            <span class="eyebrow">Case 07 (continued) &middot; Module deep-dive &middot; Retention Management</span>
+            <span class="eyebrow">Case 06 (continued) &middot; Module deep-dive &middot; Retention Management</span>
             <h2>Retention Management &mdash; daily-use GDPR tooling for Data Protection Officers</h2>
 
             <p class="lead">Retention is a daily compliance task: every personal-data record in a school has a lawful retention period, after which it must be destroyed and the destruction logged. The legacy approach was Excel files maintained per-school by 9ine&apos;s consultants. The platform module let the school&apos;s own DPO own the work directly.</p>
@@ -5230,8 +4847,8 @@
             </div>
 
             <div class="case-end-marker">
-                <span class="case-end-marker-label">End of Case 07</span>
-                <span class="case-end-marker-num">07 / 07</span>
+                <span class="case-end-marker-label">End of Case 06</span>
+                <span class="case-end-marker-num">06 / 06</span>
             </div>
         </div>
     </div>
@@ -5240,7 +4857,7 @@
     <!-- HOW I WORK -->
     <!-- ============================================ -->
     <div class="slide">
-        <span class="slide-number">36</span>
+        <span class="slide-number">28</span>
         <div class="content-wrapper">
             <span class="eyebrow">How I work</span>
             <h2>Research, systems, collaboration</h2>
@@ -5353,7 +4970,7 @@
     <!-- EXPERIENCE TIMELINE -->
     <!-- ============================================ -->
     <div class="slide">
-        <span class="slide-number">37</span>
+        <span class="slide-number">29</span>
         <div class="content-wrapper">
             <span class="eyebrow">Career timeline</span>
             <h2>13+ years across finance, cybersecurity, and healthcare</h2>
@@ -5410,7 +5027,7 @@
     <!-- THANK YOU -->
     <!-- ============================================ -->
     <div class="slide slide-thanks">
-        <span class="slide-number">38</span>
+        <span class="slide-number">30</span>
         <div class="content-wrapper" style="justify-content: center;">
             <h2 style="font-family: 'Fraunces', serif; font-size: 5rem; font-weight: 500; margin-bottom: 32px; padding-bottom: 0; line-height: 1.05; letter-spacing: -0.02em; max-width: none;">Thank you.</h2>
             <p class="lead" style="font-size: 1.3rem; max-width: 740px;">I'm looking for senior UX work where high-stakes software is the daily problem — investment banking, capital markets, healthcare, or anywhere expert users live inside complex systems all day.</p>
