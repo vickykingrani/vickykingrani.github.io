@@ -16,7 +16,11 @@ Seven case studies at https://vickykingrani.github.io/ — one line each:
 - Clinical Inventory Module (multi-hospital healthcare network): a system staff had stopped using, fixed by designing for the store, pharmacy, and OT managers separately rather than one generic "inventory user".
 - Cloud-Native Quote Platform (cloud communications): an eight-page legacy quote form became three sequenced steps — SUS 49 to 72, with click and task-time reductions measured across five representative sales tasks.
 - Pharmaceutical Track & Trace (supply-chain serialisation): restructured receiving across a four-surface domain and modelled the 11-state receipt lifecycle the teams adopted as shared vocabulary; early-phase work the team carried to production after my rotation.
-- 9ine Platform (EdTech, data protection): founding designer — eight modules, one design system, a four-tier permission architecture tied to the business model, and daily-use GDPR tooling for Data Protection Officers.
+- 9ine Platform (GDPR & data protection, before the bank engagement): founding designer for a platform used by hundreds of schools — eight modules, one design system, a four-tier permission architecture tied to the business model, and daily-use GDPR tooling for Data Protection Officers (UK GDPR, Data Protection Act, RoPA, DPIA).
+
+## Domain and regulatory fluency
+
+FRTB, Basel III, IMA DRC, UK GDPR, UK Data Protection Act, RoPA, DPIAs, pharmaceutical Track & Trace serialisation, healthcare clinical inventory, WCAG 2.2 AA accessibility.
 
 ## Résumé
 
