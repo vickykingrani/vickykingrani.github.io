@@ -73,7 +73,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             /* Surfaces */
@@ -3139,6 +3139,7 @@
     </style>
     <style>
         img { height: auto; }
+        .listen-btn { font-family: inherit; font-size: 14px; color: #1a1c1f; background: none; border: none; border-bottom: 1px solid #c9c9c4; padding: 0; cursor: pointer; }
         .p-availability { margin-top: 14px; font-size: 15px; letter-spacing: 0.02em; color: #41444d; }
     </style>
 </head>
@@ -3168,6 +3169,7 @@
                 <span><small>Email</small><a href="mailto:hello@vickykingrani.com">hello@vickykingrani.com</a></span>
                 <span><small>LinkedIn</small><a href="https://www.linkedin.com/in/vickykingrani">linkedin.com/in/vickykingrani</a></span>
                 <span><small>R&eacute;sum&eacute;</small><a href="resume/">vickykingrani.github.io/resume</a></span>
+                <span><small>Listen</small><button type="button" class="listen-btn" id="listenBtn" aria-pressed="false" hidden>&#9654; 90-second intro</button></span>
             </div>
         </div>
     </div>
@@ -3223,11 +3225,11 @@
                         <div class="career-role">Lead UX Designer · Pune (on-site) → UK (remote)</div>
                     </div>
                     <div class="career-team">Lead · 5 reports (3 designers, 1 video editor, 1 graphic designer)</div>
-                    <div class="career-domain">Cybersecurity, data protection &amp; AI governance for schools: UK independents, MATs, US, International, UAE networks.</div>
+                    <div class="career-domain">Cybersecurity, data protection &amp; AI governance for schools: UK independents, MATs, US, international, and UAE networks.</div>
                 </div>
                 <div class="career-stage is-current">
                     <span class="career-current-pill">Current</span>
-                    <div class="career-years">2023 — present · 3+ yrs</div>
+                    <div class="career-years">2023–present · 3+ yrs</div>
                     <div class="career-company">Wipro</div>
                     <div class="career-signature">Sole designer for a regulated FS platform · Wipro permanent.</div>
                     <div class="career-roles">
@@ -3282,7 +3284,7 @@
             <p class="p-poster-lead">Senior risk analysts had abandoned an expert tool and were running their daily FRTB, VaR and IMA DRC work in Excel instead. As sole designer, I researched why the platform kept losing to a spreadsheet, then redesigned it around how the work actually happens.</p>
             <div class="p-filehead">
                 <div><span>Client</span><strong>Tier-1 Investment Bank</strong></div>
-                <div><span>Timeline</span><strong>2023 &mdash; Jun 2026</strong></div>
+                <div><span>Timeline</span><strong>2023 &ndash; Jun 2026</strong></div>
                 <div><span>Role</span><strong>Sole UX Designer, Market Risk</strong></div>
                 <div><span>Research</span><strong>11 interviews &middot; n=26 survey &middot; 3 wks observation</strong></div>
                 <div><span>Outcome</span><strong>60% fewer clicks (validated, n=5)</strong></div>
@@ -3429,7 +3431,7 @@
                     <p class="lead">A major global telecommunications operator's Global Operations Centres in Mumbai, Manila, and Denver were managing service delivery tickets through a legacy desktop CRM platform. The platform processed 467,654 trouble, change, and maintenance tickets annually. Engineers had no orchestration tools, no way to prioritise across the queue, and the interface required extensive training before new joiners could operate independently.</p>
                     <div class="p-bigfig">
                         <span class="p-bigfig-num">467,654</span>
-                        <span class="p-bigfig-label">trouble, change and maintenance tickets annually</span>
+                        <span class="p-bigfig-label">trouble, change, and maintenance tickets annually</span>
                     </div>
                     <p class="p-cities">Mumbai &middot; Manila &middot; Denver &mdash; Global Operations Centres</p>
                 </div>
@@ -3524,14 +3526,14 @@
 
             <div class="img-container" style="margin-top: 24px; max-width: 80%; margin-left: auto; margin-right: auto;">
                 <img src="case_assets/03_banking_crm/case02_wireframe.webp" alt="Mid-fidelity wireframe of the bank's dashboard showing My Dashboard with metric tiles for Companies, Pipeline, Call Reports, Closed Sales YTD, Renewing Credits, WIP Credits, Credit Exceptions, Customer Issues, plus Pipeline bar chart and detailed pipeline opportunities table" width="1180" height="856" loading="lazy" decoding="async">
-                <div class="caption">Mid-fidelity dashboard wireframe — testing density and metric prominence with stakeholders before any visual design.</div>
+                <div class="caption">Mid-fidelity dashboard wireframe — testing density and metric prominence with stakeholders.</div>
             </div>
 
             <h3 class="section-heading">Four moves that earned stakeholder buy-in for structural change</h3>
             <div class="p-list" style="margin-top: 16px;">
                 <div><span class="p-list-title">Persona validation workshops</span><p>With relationship managers, branch staff, and back-office teams. The bank had existing personas; many were out of date or missing entirely.</p></div>
                 <div><span class="p-list-title">Journey mapping</span><p>For client onboarding, deal management, and dispute resolution. These sessions surfaced redundancies the bank had not noticed — tasks duplicated across teams, handoffs that broke context.</p></div>
-                <div><span class="p-list-title">Information architecture rework</span><p>Navigation was restructured around banker tasks rather than departments, validated through mid-fidelity layouts before any visual design. I designed the wireframes and refined them for stakeholder review.</p></div>
+                <div><span class="p-list-title">Information architecture rework</span><p>Navigation was restructured around banker tasks rather than departments, validated through mid-fidelity layouts. I designed the wireframes and refined them for stakeholder review.</p></div>
                 <div><span class="p-list-title">A/B testing on high-frequency flows</span><p>Pipeline view density, task list patterns, side panel behaviour — to resolve disagreements with data rather than opinion.</p></div>
             </div>
 
@@ -3582,13 +3584,11 @@
                         <span class="p-ledger-sub">Subsequent CRM modules shipped from existing components rather than custom-coded each time, compressing the dev cycle for adjacent features (engineering-team estimate)</span>
                     </div>
                     <div class="p-ledger-item">
-                        <span class="p-ledger-num">1</span>
-                        <span class="p-ledger-label">Component library</span>
+                        <span class="p-ledger-word">Component library carried forward</span>
                         <span class="p-ledger-sub">Single library carried forward to pipeline, detail, analytics surfaces</span>
                     </div>
                     <div class="p-ledger-item">
-                        <span class="p-ledger-num">6<em>mo</em></span>
-                        <span class="p-ledger-label">Research to production</span>
+                        <span class="p-ledger-word">Research &rarr; production in six months</span>
                         <span class="p-ledger-sub">Including stakeholder validation cycles</span>
                     </div>
                     <div class="p-ledger-item">
@@ -3743,7 +3743,7 @@
                 <div><span>Client</span><strong>Global Pharmaceutical Supply Chain Leader</strong></div>
                 <div><span>My Phase</span><strong>5–6 months · concurrent early phase</strong></div>
                 <div><span>My Role</span><strong>Lead UI/UX Designer (Koru)</strong></div>
-                <div><span>Team</span><strong>3-designer Koru team I led; client-side platform engineering, product, COE</strong></div>
+                <div><span>Team</span><strong>3-designer Koru team I led; client-side platform engineering, product, CoE</strong></div>
             </div>
                 </div>
             </div>
@@ -3806,7 +3806,7 @@
                     <div class="p-filehead">
                 <div><span>Client</span><strong>9ine Consulting &middot; UK</strong></div>
                 <div><span>My Role</span><strong>Lead UX Designer &middot; Founding designer &middot; 5 reports</strong></div>
-                <div><span>Period</span><strong>2020 &mdash; 2022 &middot; 2 yrs 8 mos</strong></div>
+                <div><span>Period</span><strong>2020 &ndash; 2022 &middot; 2 yrs 8 mos</strong></div>
                 <div><span>Reach</span><strong>Hundreds of schools &middot; UK independents, MATs, US, international, UAE</strong></div>
             </div>
                 </div>
@@ -3893,7 +3893,7 @@
 
             <div class="callout" style="margin-top: 28px;">
                 <strong>Honest scoping &middot; founding-designer reality.</strong>
-                <p>Discovery was lighter than my agency or in-house work. Inputs were DPO interviews, the consultants&apos; existing Excel templates, and direct usage by the founding consultants who became the platform&apos;s first internal testers. Designs went through DPO review pre-launch but not the SUS-driven validation cycles I ran on Cases 01-06. The compounding test was deployment &mdash; the platform now serves schools globally, and the modules I designed are still the spine of the product (visible on 9ine.com today).</p>
+                <p>Discovery was lighter than my agency or in-house work. Inputs were DPO interviews, the consultants&apos; existing Excel templates, and direct usage by the founding consultants who became the platform&apos;s first internal testers. Designs went through DPO review pre-launch but not the SUS-driven validation cycles I ran on Cases 01&ndash;06. The compounding test was deployment &mdash; the platform now serves schools globally, and the modules I designed are still the spine of the product (visible on 9ine.com today).</p>
             </div>
 
             <div class="case-end-marker">
@@ -3968,7 +3968,7 @@
                 </div>
             </div>
         </div>
-            <p style="margin-top: 30px; max-width: 920px; color: var(--text-body);">Where this is heading: the work keeps pulling me from screens toward the systems around them, how teams, tools and handoffs behave end to end. Service design is the surface I want to grow into next; thirteen years of dense-workflow UX is the foundation I bring to it.</p>
+            <p style="margin-top: 30px; max-width: 920px; color: var(--text-body);">Where this is heading: the work keeps pulling me from screens towards the systems around them, how teams, tools and handoffs behave end to end. Service design is the surface I want to grow into next; thirteen years of dense-workflow UX is the foundation I bring to it.</p>
 
     </div>
 
@@ -4073,5 +4073,44 @@
     })();
     </script>
 
+
+    <script>
+    (function () {
+        var TEXT = "Hi. I\'m Vicky. I lead design for expert-user enterprise software; the kind that runs trading floors, hospital networks, pharma supply chains, and data-protection offices. Thirteen-plus years, nine sectors. Most recently I was the sole designer on a tier-one investment bank\'s market-risk platform: four products, one design system, used daily by analysts working under F R T B and Basel Three. Before the bank, I was the founding designer for a G D P R and data-protection platform used by hundreds of schools, and before that, manager of a twelve-person design team at an enterprise UX agency. The numbers on this site carry their methods: sixty percent fewer clicks, tested with five senior analysts and confirmed in production. A usability score up thirty-one points on a system handling four hundred and sixty-seven thousand tickets a year. If your team owns software that experts spend their whole day in, I\'d like to hear about it. My email and resume are right on this page.";
+        function wire(id, playLabel) {
+            var btn = document.getElementById(id);
+            if (!btn || !('speechSynthesis' in window)) return;
+            function reveal() { if (window.speechSynthesis.getVoices().length > 0) btn.hidden = false; }
+            reveal();
+            if (window.speechSynthesis.addEventListener) { window.speechSynthesis.addEventListener('voiceschanged', reveal); }
+            else if ('onvoiceschanged' in window.speechSynthesis) { window.speechSynthesis.onvoiceschanged = reveal; }
+            var speaking = false;
+            function reset() { speaking = false; btn.setAttribute('aria-pressed', 'false'); btn.textContent = playLabel; }
+            function pickVoice() {
+                var vs = window.speechSynthesis.getVoices();
+                var prefs = ['Google UK English Female', 'Google UK English Male', 'Daniel', 'Sonia', 'Ryan', 'Samantha'];
+                for (var i = 0; i < prefs.length; i++) {
+                    for (var j = 0; j < vs.length; j++) { if (vs[j].name.indexOf(prefs[i]) !== -1) return vs[j]; }
+                }
+                for (var k = 0; k < vs.length; k++) { if (vs[k].lang && vs[k].lang.indexOf('en-GB') === 0) return vs[k]; }
+                for (var m = 0; m < vs.length; m++) { if (vs[m].lang && vs[m].lang.indexOf('en') === 0) return vs[m]; }
+                return null;
+            }
+            btn.addEventListener('click', function () {
+                if (speaking) { window.speechSynthesis.cancel(); reset(); return; }
+                window.speechSynthesis.cancel();
+                var u = new SpeechSynthesisUtterance(TEXT);
+                var v = pickVoice(); if (v) u.voice = v;
+                u.rate = 1;
+                u.onstart = function () { speaking = true; btn.setAttribute('aria-pressed', 'true'); btn.textContent = '\u25A0 Stop'; };
+                u.onend = reset; u.onerror = reset;
+                window.speechSynthesis.speak(u);
+            });
+            window.addEventListener('pagehide', function () { window.speechSynthesis.cancel(); });
+        }
+        wire('listenBtn', '\u25B6 90-second intro');
+        wire('listenBtnR', '\u25B6 Listen');
+    })();
+    </script>
 </body>
 </html>
