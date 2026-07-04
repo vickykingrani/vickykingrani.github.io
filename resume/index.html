@@ -84,6 +84,8 @@
         transition: color 0.15s;
     }
     .back-link:hover { color: var(--accent); }
+    .listen-link { font-family: inherit; font-size: 0.85rem; color: #52525b; background: none; border: none; border-bottom: 1px solid #d4d4d8; padding: 0; cursor: pointer; margin-left: 18px; }
+    @media print { .listen-link { display: none !important; } }
     .download-btn {
         display: inline-flex;
         align-items: center;
@@ -298,6 +300,7 @@
 <header class="topbar">
     <div class="topbar-inner">
         <a href="../" class="back-link">← Portfolio</a>
+        <button type="button" id="listenBtnR" class="listen-link" aria-pressed="false" hidden>&#9654; Listen</button>
         <a href="../Vicky_Kingrani_Resume.pdf" class="download-btn" download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
@@ -332,7 +335,7 @@
     </div>
     <div class="role-company">Wipro (Permanent)&nbsp; <span class="location">— London, UK (Hybrid)</span></div>
     <ul>
-        <li>Sole UX designer for a tier-1 investment bank's market-risk platform spanning four interlocking products under FRTB, IMA DRC ETL, and Basel III (engagement Mar 2023 – Jun 2026); served analyst, methodology, and compliance teams.</li>
+        <li>Sole UX designer for a tier-1 investment bank's market-risk platform spanning four interlocking products under FRTB, IMA DRC, and Basel III (engagement Mar 2023 – Jun 2026); served analyst, methodology, and compliance teams.</li>
         <li>Modernised a 10-year-old legacy desktop tool: replaced modal handoffs with adaptive, context-aware components and progressive disclosure patterns.</li>
         <li>Validated redesign in Figma prototype testing with five senior analysts &mdash; 60% reduction in clicks for standard daily setups, 40% task-completion lift &mdash; confirmed in production after release.</li>
         <li>Propagated the design system across three adjacent market-risk products; delivered WCAG 2.2 AA compliance across complex data tables and inputs.</li>
@@ -363,7 +366,7 @@
     <div class="role-company">Capgemini&nbsp; <span class="location">— Pune, India</span></div>
     <ul>
         <li>Solo UX consultant on four enterprise projects for global clients: server management, system management, data-centre tooling, and an internal food-ordering app.</li>
-        <li>Architected a design system from scratch; unified component library that compressed development cycles for new features.</li>
+        <li>Architected a design system from scratch; the unified component library compressed development cycles for new features.</li>
         <li>Facilitated stakeholder workshops to resolve usability challenges and prioritise scope for major releases.</li>
     </ul>
 </div>
@@ -375,10 +378,11 @@
     </div>
     <div class="role-company">Koru UX Design&nbsp; <span class="location">— Pune, India</span></div>
     <ul>
-        <li>Managed twelve reports (seven designers, five developers) on 16+ projects across finance, healthcare, telecom, pharma supply chain, ecommerce, kiosks, and Windows desktop applications.</li>
+        <li>Managed twelve reports (seven designers, five developers) on 16+ projects across finance, healthcare, telecom, pharma supply chain, e-commerce, kiosks, and Windows desktop applications.</li>
         <li>Telecom GOC ticket-management redesign — SUS 52 → 83 across pre/post sessions on a 467,000-ticket-per-year system spanning Mumbai, Manila, and Denver operations centres.</li>
-        <li>Clinical inventory module redesign &mdash; staff adoption from 22% to 82% across a multi-hospital healthcare network.</li>
-        <li>Banking CRM modernisation — component library carried forward to dispute, credit, and deal-management surfaces; pharma Track &amp; Trace state machine adopted as shared engineering / QA / customer-facing vocabulary.</li>
+        <li>Clinical inventory module redesign &mdash; rebuilt around store, pharmacy, and OT manager roles after staff had largely abandoned the system; adoption recovered across a multi-hospital healthcare network.</li>
+        <li>Banking CRM modernisation — component library carried forward to dispute, credit, and deal-management surfaces.</li>
+        <li>Pharma Track &amp; Trace — receipt-lifecycle state machine adopted as shared engineering / QA / customer-facing vocabulary.</li>
         <li>Championed adoption of formal usability testing across the agency; established the SUS-driven validation cadence used on subsequent engagements.</li>
     </ul>
 </div>
@@ -401,7 +405,7 @@
 <p class="inline-list"><strong>Tools:</strong> Figma, Sketch, Adobe XD, Axure, Miro, Jira, GitHub.</p>
 
 <h2>Domain &amp; Regulatory Expertise</h2>
-<p class="inline-list">FRTB, Basel III, IMA DRC ETL, UK GDPR, UK Data Protection Act, RoPA, DPIAs, pharmaceutical Track &amp; Trace serialisation, healthcare clinical inventory, WCAG 2.2 AA accessibility.</p>
+<p class="inline-list">FRTB, Basel III, IMA DRC, UK GDPR, UK Data Protection Act, RoPA, DPIA, pharmaceutical Track &amp; Trace serialisation, healthcare clinical inventory, WCAG 2.2 AA accessibility.</p>
 
 <h2>Education</h2>
 <div class="edu">
@@ -424,5 +428,44 @@
 
 </main>
 
+
+    <script>
+    (function () {
+        var TEXT = "Hi. I\'m Vicky. I lead design for expert-user enterprise software; the kind that runs trading floors, hospital networks, pharma supply chains, and data-protection offices. Thirteen-plus years, nine sectors. Most recently I was the sole designer on a tier-one investment bank\'s market-risk platform: four products, one design system, used daily by analysts working under F R T B and Basel Three. Before the bank, I was the founding designer for a G D P R and data-protection platform used by hundreds of schools, and before that, manager of a twelve-person design team at an enterprise UX agency. The numbers on this site carry their methods: sixty percent fewer clicks, tested with five senior analysts and confirmed in production. A usability score up thirty-one points on a system handling four hundred and sixty-seven thousand tickets a year. If your team owns software that experts spend their whole day in, I\'d like to hear about it. My email and resume are right on this page.";
+        function wire(id, playLabel) {
+            var btn = document.getElementById(id);
+            if (!btn || !('speechSynthesis' in window)) return;
+            function reveal() { if (window.speechSynthesis.getVoices().length > 0) btn.hidden = false; }
+            reveal();
+            if (window.speechSynthesis.addEventListener) { window.speechSynthesis.addEventListener('voiceschanged', reveal); }
+            else if ('onvoiceschanged' in window.speechSynthesis) { window.speechSynthesis.onvoiceschanged = reveal; }
+            var speaking = false;
+            function reset() { speaking = false; btn.setAttribute('aria-pressed', 'false'); btn.textContent = playLabel; }
+            function pickVoice() {
+                var vs = window.speechSynthesis.getVoices();
+                var prefs = ['Google UK English Female', 'Google UK English Male', 'Daniel', 'Sonia', 'Ryan', 'Samantha'];
+                for (var i = 0; i < prefs.length; i++) {
+                    for (var j = 0; j < vs.length; j++) { if (vs[j].name.indexOf(prefs[i]) !== -1) return vs[j]; }
+                }
+                for (var k = 0; k < vs.length; k++) { if (vs[k].lang && vs[k].lang.indexOf('en-GB') === 0) return vs[k]; }
+                for (var m = 0; m < vs.length; m++) { if (vs[m].lang && vs[m].lang.indexOf('en') === 0) return vs[m]; }
+                return null;
+            }
+            btn.addEventListener('click', function () {
+                if (speaking) { window.speechSynthesis.cancel(); reset(); return; }
+                window.speechSynthesis.cancel();
+                var u = new SpeechSynthesisUtterance(TEXT);
+                var v = pickVoice(); if (v) u.voice = v;
+                u.rate = 1;
+                u.onstart = function () { speaking = true; btn.setAttribute('aria-pressed', 'true'); btn.textContent = '\u25A0 Stop'; };
+                u.onend = reset; u.onerror = reset;
+                window.speechSynthesis.speak(u);
+            });
+            window.addEventListener('pagehide', function () { window.speechSynthesis.cancel(); });
+        }
+        wire('listenBtn', '\u25B6 90-second intro');
+        wire('listenBtnR', '\u25B6 Listen');
+    })();
+    </script>
 </body>
 </html>
