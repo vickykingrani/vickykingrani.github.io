@@ -3139,7 +3139,6 @@
     </style>
     <style>
         img { height: auto; }
-        .listen-btn { font-family: inherit; font-size: 14px; color: #1a1c1f; background: none; border: none; border-bottom: 1px solid #c9c9c4; padding: 0; cursor: pointer; }
         .p-availability { margin-top: 14px; font-size: 15px; letter-spacing: 0.02em; color: #41444d; }
     </style>
 </head>
@@ -3169,7 +3168,6 @@
                 <span><small>Email</small><a href="mailto:hello@vickykingrani.com">hello@vickykingrani.com</a></span>
                 <span><small>LinkedIn</small><a href="https://www.linkedin.com/in/vickykingrani">linkedin.com/in/vickykingrani</a></span>
                 <span><small>R&eacute;sum&eacute;</small><a href="resume/">vickykingrani.github.io/resume</a></span>
-                <span><small>Listen</small><button type="button" class="listen-btn" id="listenBtn" aria-pressed="false" hidden>&#9654; 90-second intro</button></span>
             </div>
         </div>
     </div>
@@ -4073,44 +4071,5 @@
     })();
     </script>
 
-
-    <script>
-    (function () {
-        var TEXT = "Hi. I\'m Vicky. I lead design for expert-user enterprise software; the kind that runs trading floors, hospital networks, pharma supply chains, and data-protection offices. Thirteen-plus years, nine sectors. Most recently I was the sole designer on a tier-one investment bank\'s market-risk platform: four products, one design system, used daily by analysts working under F R T B and Basel Three. Before the bank, I was the founding designer for a G D P R and data-protection platform used by hundreds of schools, and before that, manager of a twelve-person design team at an enterprise UX agency. The numbers on this site carry their methods: sixty percent fewer clicks, tested with five senior analysts and confirmed in production. A usability score up thirty-one points on a system handling four hundred and sixty-seven thousand tickets a year. If your team owns software that experts spend their whole day in, I\'d like to hear about it. My email and resume are right on this page.";
-        function wire(id, playLabel) {
-            var btn = document.getElementById(id);
-            if (!btn || !('speechSynthesis' in window)) return;
-            function reveal() { if (window.speechSynthesis.getVoices().length > 0) btn.hidden = false; }
-            reveal();
-            if (window.speechSynthesis.addEventListener) { window.speechSynthesis.addEventListener('voiceschanged', reveal); }
-            else if ('onvoiceschanged' in window.speechSynthesis) { window.speechSynthesis.onvoiceschanged = reveal; }
-            var speaking = false;
-            function reset() { speaking = false; btn.setAttribute('aria-pressed', 'false'); btn.textContent = playLabel; }
-            function pickVoice() {
-                var vs = window.speechSynthesis.getVoices();
-                var prefs = ['Google UK English Male', 'Daniel', 'Arthur', 'Microsoft Ryan', 'Ryan', 'George', 'Aaron', 'Alex', 'Google US English'];
-                for (var i = 0; i < prefs.length; i++) {
-                    for (var j = 0; j < vs.length; j++) { if (vs[j].name.indexOf(prefs[i]) !== -1) return vs[j]; }
-                }
-                for (var k = 0; k < vs.length; k++) { if (vs[k].lang && vs[k].lang.indexOf('en-GB') === 0) return vs[k]; }
-                for (var m = 0; m < vs.length; m++) { if (vs[m].lang && vs[m].lang.indexOf('en') === 0) return vs[m]; }
-                return null;
-            }
-            btn.addEventListener('click', function () {
-                if (speaking) { window.speechSynthesis.cancel(); reset(); return; }
-                window.speechSynthesis.cancel();
-                var u = new SpeechSynthesisUtterance(TEXT);
-                var v = pickVoice(); if (v) u.voice = v;
-                u.rate = 1;
-                u.onstart = function () { speaking = true; btn.setAttribute('aria-pressed', 'true'); btn.textContent = '\u25A0 Stop'; };
-                u.onend = reset; u.onerror = reset;
-                window.speechSynthesis.speak(u);
-            });
-            window.addEventListener('pagehide', function () { window.speechSynthesis.cancel(); });
-        }
-        wire('listenBtn', '\u25B6 90-second intro');
-        wire('listenBtnR', '\u25B6 Listen');
-    })();
-    </script>
 </body>
 </html>
