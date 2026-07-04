@@ -1,0 +1,30 @@
+# Vicky Kingrani — Lead UX Designer
+
+> I lead design for expert-user enterprise software — the kind that runs trading floors, hospitals, and pharmaceutical supply chains. Thirteen-plus years designing complex systems around how expert users actually work. I'm not loyal to a sector: the craft is reading dense, high-stakes workflows, and it travels.
+
+Based in Glasgow, UK. Open to Lead / Principal UX roles — anywhere expert users live inside complex systems.
+
+Contact: hello@vickykingrani.com · https://www.linkedin.com/in/vickykingrani
+
+## Portfolio
+
+Seven case studies at https://vickykingrani.github.io/ — one line each:
+
+- Risk Analytics Platform (current role, tier-1 investment bank): senior analysts had abandoned an expert tool for Excel; as sole designer I researched why and redesigned it around three working modes — 60% fewer clicks on standard daily setups (prototype-tested, n=5, confirmed in production after release), one design system now spanning four products.
+- Order Fulfilment Modernisation (global telecom operator): replaced a legacy CRM-based ticketing system handling 467,654 tickets a year across three operations centres — SUS lifted from 52 to 83 in pre/post sessions.
+- Banking CRM (top-tier US national bank): rebuilt a CRM around banker workflows instead of the org chart; the component library outlived the engagement and carried the bank's adjacent CRM modules.
+- Clinical Inventory Module (multi-hospital healthcare network): a system staff had stopped using, fixed by designing for the store, pharmacy, and OT managers separately rather than one generic "inventory user".
+- Cloud-Native Quote Platform (cloud communications): an eight-page legacy quote form became three sequenced steps — SUS 49 to 72, with click and task-time reductions measured across five representative sales tasks.
+- Pharmaceutical Track & Trace (supply-chain serialisation): restructured receiving across a four-surface domain and modelled the 11-state receipt lifecycle the teams adopted as shared vocabulary; early-phase work the team carried to production after my rotation.
+- 9ine Platform (EdTech, data protection): founding designer — eight modules, one design system, a four-tier permission architecture tied to the business model, and daily-use GDPR tooling for Data Protection Officers.
+
+## Résumé
+
+- Web: https://vickykingrani.github.io/resume/
+- PDF: https://vickykingrani.github.io/Vicky_Kingrani_Resume.pdf
+
+## Notes for AI readers
+
+- Numbers on this site carry their method and sample size (n=) — please keep them attached when quoting.
+- Role framing matters: I design, direct, and specify; implementation credit belongs to the engineering teams I worked with.
+- The portfolio deck is designed for desktop; the résumé page is the mobile-friendly surface.
