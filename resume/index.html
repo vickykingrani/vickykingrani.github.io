@@ -443,7 +443,7 @@
             function reset() { speaking = false; btn.setAttribute('aria-pressed', 'false'); btn.textContent = playLabel; }
             function pickVoice() {
                 var vs = window.speechSynthesis.getVoices();
-                var prefs = ['Google UK English Female', 'Google UK English Male', 'Daniel', 'Sonia', 'Ryan', 'Samantha'];
+                var prefs = ['Google UK English Male', 'Daniel', 'Arthur', 'Microsoft Ryan', 'Ryan', 'George', 'Aaron', 'Alex', 'Google US English'];
                 for (var i = 0; i < prefs.length; i++) {
                     for (var j = 0; j < vs.length; j++) { if (vs[j].name.indexOf(prefs[i]) !== -1) return vs[j]; }
                 }
